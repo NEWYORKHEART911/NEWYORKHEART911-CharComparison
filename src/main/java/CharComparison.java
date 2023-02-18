@@ -14,12 +14,9 @@ public class CharComparison {
         String wordOne = new String(a);
         String wordTwo = new String(b);
         int value = wordOne.compareTo(wordTwo);
-        if(value>0) {
-            return 1;
+        if(value==0){
+            return 0;
         }
-        if(value<0) {
-            return -1;
-        }
-        return value;
+        return value>0 ? 1 : -1;
     }
 }
